@@ -1,0 +1,4 @@
+customer_type,total_attempts,successful_bookings,conversion_rate_percent
+New,46,46,100.0
+Returning,4,3,75.0
+booking,4,0,0.0

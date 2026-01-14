@@ -1,0 +1,17 @@
+hour_of_day,total_leads,estimated_opportunity_value,operational_status
+21,7,1400,Off-Hours (Risk of Churn)
+14,6,1200,Business Hours
+15,5,1000,Business Hours
+20,5,1000,Off-Hours (Risk of Churn)
+9,5,1000,Off-Hours (Risk of Churn)
+13,4,800,Business Hours
+11,4,800,Business Hours
+16,3,600,Business Hours
+10,3,600,Business Hours
+17,3,600,Business Hours
+8,2,400,Off-Hours (Risk of Churn)
+19,2,400,Business Hours
+23,2,400,Off-Hours (Risk of Churn)
+22,1,200,Off-Hours (Risk of Churn)
+7,1,200,Off-Hours (Risk of Churn)
+12,1,200,Business Hours
