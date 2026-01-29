@@ -1,61 +1,114 @@
-# Zero-Budget Growth Strategy: Skincare Clinic Optimization 🏥
+# Lead Optimization: Skincare Clinic Data Analysis
 
-![Role](https://img.shields.io/badge/Role-Technical_Marketing_Lead-blue?style=for-the-badge)
-![Tech Stack](https://img.shields.io/badge/Stack-Python_%7C_SQL_%7C_Looker_Studio-orange?style=for-the-badge)
+**Challenge:** Increase bookings without ad spend by identifying operational inefficiencies in lead management.
 
-## 📌 Project Overview
-
-**"How can we increase bookings without spending a single dollar on ads?"**
-
-This project answers that question for a Skincare Clinic in Los Angeles. The client had a functional website but suffered from unutilized data and lead leakage. Instead of suggesting an immediate budget increase, I engineered a data pipeline to identify operational inefficiencies and proposed a **"Zero-Budget Growth Strategy"**.
-
-## 📊 Key Deliverables (Dashboard)
-
-I built an interactive dashboard to visualize the "hidden leaks" in the funnel.
-
-![Dashboard Preview](./dashboard/dashboard_screenshot.png)
-_(Click to view full dashboard)_
-
-## 🔍 Key Insights & Technical Discovery
-
-### 1. The "9 PM Golden Time" Leak (Operational Gap)
-
-- **Discovery:** Using Python to parse timestamp logs, I found that **13% of leads** arrive at **21:00 (9 PM)**, well after business hours.
-- **Impact:** High churn risk due to delayed response (12+ hours).
-- **Solution:** Proposed a **Night-Shift CRM Automation** script to capture these leads instantly.
-
-### 2. Funnel Friction Analysis (UX)
-
-- **Discovery:** While New Customers convert at **100%**, Returning Customers show a **25% drop-off rate**.
-- **Impact:** Loyal customers are frustrated by redundant form fields.
-- **Solution:** Designed a "One-Click Booking" logic to remove friction for VIPs.
-
-### 3. High-Value Targeting (Data-Driven Ad Strategy)
-
-- **Discovery:** SQL analysis revealed that **30% of new inquiries** are specifically for **"Dark Spot / Melasma"** treatments.
-- **Action:** This data validates that future ad spend should target "Pigmentation Concerns" rather than generic branding.
-
-## 🛠️ Technical Workflow
-
-### 1. Data Engineering (Python)
-
-- **Challenge:** Raw data was stored in a nested JSON format within a CSV column.
-- **Action:** Built an ETL pipeline using `pandas` to parse JSON strings and map Service IDs to readable names.
-- **Code:** [View Python Script](./scripts/01_data_preprocessing.py)
-
-### 2. Scalability (SQL / BigQuery)
-
-- **Challenge:** Preparing for future data scale (1M+ rows).
-- **Action:** Wrote Standard SQL queries to perform the same transformation and analysis in a Data Warehouse environment.
-- **Code:** [View SQL Queries](./queries/bigquery_analysis.sql)
-
-### 3. Visualization (Looker Studio)
-
-- **Action:** Connected processed data to Looker Studio for real-time monitoring.
-- **Design:** Implemented a "Fit-to-Width" responsive layout for cross-device reporting.
+**Approach:** Analyzed lead submission data using Python and SQL to uncover friction points in the customer journey, then visualized findings via Looker Studio.
 
 ---
 
-### 📈 Business Impact
+## 🔍 Key Insights
 
-By implementing the **Night-Shift Automation** and **UX Improvements**, we project to recover **~20% of lost leads**, effectively increasing revenue without additional advertising costs.
+### 1. After-Hours Lead Leakage
+
+**Discovery:** 13% of leads arrive at 9PM (after business hours)
+
+**Impact:** 12+ hour response delay creates high churn risk
+
+**Recommendation:** Implement automated lead capture for instant acknowledgment, reducing response time from next-day to immediate
+
+---
+
+### 2. Returning Customer Friction
+
+**Discovery:** Returning customers show 25% drop-off rate vs. 100% conversion for new customers
+
+**Impact:** Loyal customers frustrated by redundant form fields
+
+**Recommendation:** Streamline booking flow for recognized users (pre-fill contact info, simplify form)
+
+---
+
+### 3. High-Value Service Targeting
+
+**Discovery:** 30% of inquiries are for "Dark Spot/Melasma" treatments (via SQL analysis of service preferences)
+
+**Impact:** Validates future paid media targeting strategy when budget becomes available
+
+**Application:** Focus ad creative and messaging on pigmentation concerns rather than generic skincare
+
+---
+
+## 🛠️ Technical Workflow
+
+### 1. Data Cleaning (Python)
+
+**Challenge:** Raw lead data stored with nested JSON in CSV columns
+
+**Solution:** Cleaned and structured data using pandas to parse JSON strings and map service IDs to readable names
+
+**Code:** [View Python Script](./scripts/01_data_preprocessing.py)
+
+---
+
+### 2. Analysis (SQL)
+
+**Challenge:** Enable scalable analysis if data volume grows
+
+**Solution:** Wrote Standard SQL queries replicating the Python analysis, ready for BigQuery deployment
+
+**Code:** [View SQL Queries](./queries/bigquery_analysis.sql)
+
+**Key Queries:**
+
+- Lead volume by hour of day
+- Service preference distribution
+- Conversion rate by customer type
+
+---
+
+### 3. Visualization (Looker Studio)
+
+**Solution:** Connected processed data to Looker Studio dashboard
+
+**Features:**
+
+- Lead volume heatmap (by hour)
+- Service demand breakdown
+- Conversion funnel by customer type
+
+![Dashboard Preview](./dashboard/dashboard_screenshot.png)
+
+---
+
+## 📊 Estimated Impact
+
+**Projected Improvements (Pre-Implementation):**
+
+- **13% lead capture gain** through 9PM automation
+- **Reduced drop-off** for returning customers via UX optimization
+- **Better ad targeting** when paid media budget becomes available
+
+**Cost:** $0 (operational improvements only)
+
+---
+
+## 📂 Project Files
+
+- `/data/` - Raw and processed CSV files
+- `/queries/` - SQL analysis scripts
+- `/reports/` - Strategy proposal and evidence
+- `/docs/` - Data preprocessing methodology
+
+---
+
+## 🎯 Skills Demonstrated
+
+- Data cleaning and transformation (Python/Pandas)
+- SQL analysis (Standard SQL)
+- Data visualization (Looker Studio)
+- Conversion funnel optimization
+- Business insight generation from raw data
+
+---
+
+_Client identity anonymized. All metrics represent actual analysis results._

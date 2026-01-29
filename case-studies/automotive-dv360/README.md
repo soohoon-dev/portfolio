@@ -200,7 +200,7 @@ The massive impression drop reflects a deliberate shift from broad match keyword
 
 Interactive visualization of campaign performance analysis.
 
-**🔗 Live Dashboard:** [View in Looker Studio](YOUR_SHARE_LINK_HERE)
+**🔗 Live Dashboard:** [View in Looker Studio](https://lookerstudio.google.com/s/lXGWs8p2Cqs)
 
 ### Dashboard Structure:
 
