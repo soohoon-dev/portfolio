@@ -96,7 +96,7 @@ English (Professional), Korean (Native), Japanese (Professional)
 
 - **Resume:** [View Full Resume](./docs/RESUME.md)
 - **LinkedIn:** [linkedin.com/in/soo-hoon-yu](https://linkedin.com/in/soo-hoon-yu)
-- **Email:** soohoon.yu@gmail.com
+- **Email:** soohoonyu.la@gmail.com
 - **Location:** Los Angeles, CA
 
 ---
